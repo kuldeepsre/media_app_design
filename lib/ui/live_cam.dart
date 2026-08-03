@@ -21,7 +21,6 @@ class _LiveCamState extends State<LiveCam> {
     super.initState();
     Future.microtask(() => context.read<CamBrain>().boot());
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
